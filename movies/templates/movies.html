@@ -1,0 +1,18 @@
+<h1>Movies</h1>
+
+<ul>
+    {% for kategori in kategoriler %}
+    <li>{{kategori}}</li>
+    {% endfor %}
+</ul>
+
+
+<div id="filmler">
+    {% for film in filmler %}
+    <div>
+        <p>{{film.film_adi}}</p>
+        <p>{{film.aciklama}}</p>
+        <img src="{{film.resim}}" alt="">
+    </div>
+    {% endfor %}
+</div>
